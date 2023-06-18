@@ -1,14 +1,14 @@
 var c_2021 = document.querySelector(".counter-2021");
 var c_2022 = document.querySelector(".counter-2022");
 
-console.log('inside placements.js');
+
 c_2021.innerHTML = 0;
 c_2022.innerHTML = 0;
 
 let counts=setInterval(updated,50);
 let upto=0;
 function updated(){
-    // console.log(upto++);
+    upto++;
     c_2021.innerHTML = upto;
     c_2022.innerHTML = upto;
         if(upto == 24){
@@ -17,4 +17,4 @@ function updated(){
         else if(upto == 69){
             clearInterval(counts)
         }
-}       
+}    

@@ -11,7 +11,7 @@ right.addEventListener("click",function (e){
     if(counter === 10 ){
         counter = 1;
     }
-    var path = "/Images/Carousel/"+counter+".jpg";
+    var path = "Images/Carousel/"+counter+".jpg";
     image.setAttribute("src",path);
     image.classList.add("carousel-img-animate");
     const timeout = setTimeout(function(){
@@ -28,7 +28,7 @@ left.addEventListener("click",function (e){
     if(counter === 0){
         counter = 9;
     }
-    var path = "/Images/Carousel/"+counter+".jpg";
+    var path = "Images/Carousel/"+counter+".jpg";
     image.setAttribute("src",path);
 });
 
