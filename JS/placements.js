@@ -8,7 +8,7 @@ c_2022.innerHTML = 0;
 let counts=setInterval(updated,50);
 let upto=0;
 function updated(){
-    console.log(upto++);
+    // console.log(upto++);
     c_2021.innerHTML = upto;
     c_2022.innerHTML = upto;
         if(upto == 24){

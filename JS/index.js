@@ -36,7 +36,7 @@ left.addEventListener("click",function (e){
 
 // var flash = document.querySelector(".welcome");
 
-// // document.addEventListener("load", function (){
+// document.addEventListener("load", function (){
 //     const timeout = setTimeout(function(){
 //         flash.classList.remove("welcome");
 //     },4000);
