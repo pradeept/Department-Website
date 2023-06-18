@@ -1,7 +1,7 @@
 var c_2021 = document.querySelector(".counter-2021");
 var c_2022 = document.querySelector(".counter-2022");
 
-
+console.log('inside placements.js');
 c_2021.innerHTML = 0;
 c_2022.innerHTML = 0;
 
