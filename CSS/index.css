@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-fam);
+}
+:root{
+    --clr-primary: #000000;
+    --clr-primary2: #FFFFFF;
+    --clr-secondary: #C5C04F;
+    --light-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --font-fam:'Montserrat',sans-serif;
+}
+
+/* Welcome */
+
+
+/* Header */
+header{
+    font-family: 'Chakra Petch',cursive;
+    font-weight: 800;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0,0,0, 0.8);;
+    color: var(--clr-primary2);
+}
+.dsce-logo{
+    width: 100px;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.main-heading{
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+/* Navigation */
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    box-shadow: var(--dark-shadow);
+}
+
+nav ul{
+    /* position: sticky; */
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    padding: 10px;
+    margin: 1rem 2rem;
+}
+
+.active{
+    background-color: var(--clr-primary);
+    color: var(--clr-primary2);
+}
+
+nav ul li a{
+    color: var(--clr-primary);
+    font-family: var(--font-fam);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* border: 2px solid rgba(0, 0, 0, 0.2); */
+    padding: 10px;
+    transition: background-color ease 1s;
+}
+
+nav ul li a:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-primary2);
+}
+
+.navbar-bg-active{
+    background-color: var(--clr-primary);
+    border: 1px solid var(--clr-primary2);
+}
+.navbar-bg-active:hover{
+    background-color: var(--clr-primary2);
+    color: var(--clr-primary);
+}
+
+/* Hero Section */
+
+/* .hero{
+
+} */
+
+.carousel{
+    margin: 10% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.2s;
+}
+
+.carousel-img{
+    border-radius: 10px;
+    width: 80%;
+    height: 500px;
+    
+}
+.carousel-img-animate{
+    animation-name:flash;
+    animation-duration: 1s;
+}
+
+@keyframes flash{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.carousel:hover{
+    margin: 3rem 10%;
+}
+
+/* .img-slide{
+
+} */
+
+.swipe-left{
+    position: absolute;
+    cursor: pointer;
+    left: 15%;
+    opacity: 0.5;
+
+}
+
+.swipe-right{
+    position: absolute;
+    cursor: pointer;
+     right: 15%;
+     opacity: 0.5;
+
+}
+
+/* VISION */
+.vision{
+    box-shadow: var(--light-shadow);
+    padding: 2rem;
+    margin: 10% 10%;
+    width: 30%;
+}
+
+.vision-heading{
+    font-family: var(--font-fam);
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: inline;
+    background-color: var(--clr-secondary);
+}
+
+.vision-para{
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 2;
+}
+
+/* MISSION */
+.mission{
+    box-shadow: var(--light-shadow);
+    padding: 2rem;
+    margin: 2rem 10%;
+    width: 30%;
+}
+
+.mission-heading{
+    font-family: var(--font-fam);
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: inline;
+    background-color: var(--clr-secondary);
+}
+
+.mission-list {
+    margin: 1rem;
+}
+
+.mission-list li{
+    /* text-align: left; */
+    padding: 1rem;
+    list-style: none;
+    line-height: 1;
+}
+
+
+.mission-list li::before{
+    content: '\2022';
+    width: 1rem;
+    color: var(--clr-secondary);
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* From HOD's Desk */
+
+.hod-desk{
+    display: flex;
+    margin: 10%;
+    background-color: var(--clr-primary);
+}
+
+.hod-words h2{
+    color: var(--clr-secondary);
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 10px;
+}
+.hod-words p{
+    text-align: center;
+    margin: 20px;
+    color: var(--clr-primary2);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.hod-img img{
+    margin: 10px;
+    width: 10vw;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+.contact-details{
+    margin: 5%;
+    width: 55vw;
+}
+
+.map{
+    margin: 1rem;
+    font-size: 1.5rem;
+
+}
+
+iframe{
+    box-shadow: var(--light-shadow);
+}
+
+.location{
+    display: flex;
+    margin: 0.8rem;
+}
+
+.location i{
+    margin: 10px;
+}

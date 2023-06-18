@@ -1,0 +1,52 @@
+@import 'index.css';
+
+.count{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count div{
+    text-align: center;
+    margin: 2rem 10% ;
+    padding: 20px;
+}
+.placements-2021 h1{
+    font-size: 7rem;
+}
+
+.placements-2022 h1{
+    font-size: 7rem;
+}
+
+.pdf-2022{
+    margin: 10% 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pdf-2022 embed{
+    margin: 1rem 10%;
+}
+
+.table-2021 table{
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr{
+    background: rgb(73, 73, 73);
+    color: white;
+    line-height: 1.5;
+}
+td{
+    padding: 1rem;
+}
+
+tr:hover{
+    background-color:rgb(54, 54, 54) ;
+}

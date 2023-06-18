@@ -1,0 +1,51 @@
+@import 'index.css';
+
+.course-details{
+    margin: 5% 20%;
+    padding: 2rem;
+}
+
+.course-details h2{
+    display: inline;
+    padding: 10px;
+    background-color: var(--clr-secondary);
+}
+
+.course-details ul li{
+    margin: 2rem;
+    font-weight: 600;
+}
+
+span{
+    margin-left: 1rem;
+    font-weight: 300;
+}
+
+.course-eligibility{
+    margin: 5% 20%;
+    padding: 2rem;
+}
+
+.course-eligibility h2{
+    display: inline;
+    padding: 10px;
+    background-color: var(--clr-secondary);
+}
+
+.course-eligibility p{
+    padding: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.download-scheme{
+    margin: 5% 20%;
+    padding: 2rem;
+}
+
+.download-scheme i{
+    color: #3a392a;
+    margin: 1.5rem;
+    padding: 10px;
+}
